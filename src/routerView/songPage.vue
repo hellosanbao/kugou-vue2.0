@@ -35,7 +35,12 @@
 		computed:mapGetters(['currentData','isPlay','isReadyPlay','canMove']),
 		filters: {
 			lyrctxt(value){
-				return value.substr(8)
+				if(value){
+					return value.substr(8)
+				}else{
+					return 'gg了，暂无歌词 ^_^!'
+				}
+				
 			}
 		},
 		mounted(){
@@ -106,11 +111,11 @@
 					$.each(_this.currentData.songData.lyrc, function(ind, ele) {
 						var formatTime = ele.substr(0, 5)
 						var _h = $(".lyrc-content p").height()
-						var curind=(ind-2)>0?(ind-2):0
+						var curind=(ind-1)>0?(ind-1):0
 						if (currentTime == formatTime) {
 							$(".lyrc-content").css({ top: -(curind * _h) });
-							$(".lyrc-content p").eq(ind).prev().prev().removeClass('curLyrc')
-							$(".lyrc-content p").eq(ind).prev().addClass('curLyrc')
+							$(".lyrc-content p").eq(ind).prev().removeClass('curLyrc')
+							$(".lyrc-content p").eq(ind).addClass('curLyrc')
 						}
 					})
 				}
