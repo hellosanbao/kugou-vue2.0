@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*----------- 重置样式 ----------------*/
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{font-weight:normal;}
+html,body,fieldset,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style: normal;}
+[hidefocus],summary{outline:0;}
+ul , ol , ul li , li , ol li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font-family:"Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53; font-size:12px;color:#444 ;outline:0;}
+body{background:#fff;color:#444;}
+a{color:#444; border: none; text-decoration: none;outline:none; /*移除虚线框  IE8,FF有用*/ hide-focus: expression(this.hideFocus=true); /*IE6、IE7*/}
+a:focus{outline: 0;-moz-outline-style: none;}
+a:hover{text-decoration: none;}
+img{overflow: hidden;border: 0 none;}
+button,input,select,textarea{font-size:100%;font-family:tahoma;margin: 0;outline: 0 none;vertical-align: baseline;_overflow:visible;*vertical-align: middle;*overflow:visible;}
+/* ================ 全局function ============ */
+.fl{float: left;}
+.fr{float: right;}
+.f_ib{display:inline-block;}
+.f_oh{overflow:hidden;}/* 清除浮动*/
+.clearfix{clear:both;} /*清除浮动*/
+.clearfix:after{clear:both;display:block;height:0;font-size:0;content:".";visibility:hidden;}
+
+
+
+/*font function*/
+.f_ffa{font-family:'SimSun';}/*标记宋体*/
+.f_ffy{font-family:"Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53;}/*标记微软雅黑字体*/
+
+
+.of_hide{overflow: hidden;}
+.tx_c{text-align: center!important;}
+.cl{clear: both;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.dp_block{display: block}
+.bor_n{border:none !important;}
+.cl{clear: both;}
+.tx_r{text-align: right;}
+.fwb{font-weight:blod;}
+.txt_c{text-align: center;}
+.img-box-x img{width: 100%;}
+.img-box img{width: 100%;height:100%;}
+
+.border1px-bottom{position: relative;}
+.border1px-bottom:after{display: block;content:"";border-bottom:1px solid #e5e5e5;position: absolute;bottom:0;left:0;width: 100%;transform: scaleY(0.5);}
